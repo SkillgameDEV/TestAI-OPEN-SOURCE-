@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming AI Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .question-form {
+      display: flex;
+    }
+    
+    .question-input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+    }
+    
+    .question-submit {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .answer {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f7f7f7;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Programming AI Assistant</h1>
+    <form class="question-form">
+      <input type="text" class="question-input" placeholder="Ask a programming question">
+      <button type="submit" class="question-submit">Ask</button>
+    </form>
+    <div class="answer"></div>
+  </div>
+
+  <script>
+    // JavaScript code for handling form submission and AI response
+    document.querySelector('.question-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const questionInput = document.querySelector('.question-input');
+      const answerDiv = document.querySelector('.answer');
+      const question = questionInput.value;
+      
+      // TODO: Send the question to the server or process it directly in the browser
+      
+      // Placeholder code for displaying the answer
+      const answer = 'This is the answer to your programming question.';
+      answerDiv.textContent = answer;
+    });
+  </script>
+</body>
+</html>
